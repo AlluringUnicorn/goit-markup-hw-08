@@ -41,18 +41,40 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__link link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__icon" width="10" height="16" aria-label="Кнопка мобільного меню">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               38 096 111 11 11</a
             >
           </li>
         </ul>
-        <button type="button" class="menu-btn">
-          <svg width="24" height="16" class="menu-svg">
-            <use href="./images/sprite.svg#icon-menu"></use>
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="16">
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
+        <div class="menu-container js-menu-container">
+          <button type="button" class="menu-toggle js-close-menu">
+            <svg width="24" height="16">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        <ul class="list">
+          <li class="mob-menu__item"><a href="./index.html" class="mob-menu__nav link current">Студія</a></li>
+          <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__nav link">Портфоліо</a></li>
+          <li class="mob-menu__item"><a href="" class="mob-menu__nav link">Контакти</a></li>
+        </ul>
+        <ul class="list">
+          <li class="mob-menu__contacts" ><a href="tel:+380961111111" class="mob-menu__tel link">+38 096 111 11 11</a></li>
+          <li class="mob-menu__contacts" ><a href="mailto:info@devstudio.com" class="mob-menu__mail link">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mob-menu__social list">
+          <li class="line"><a href=""class="link">Instagram</a></li>
+          <li class="line--t"><a href=""class="link">Twitter</a></li>
+          <li class="line--f"><a href=""class="link">Facebook</a></li>
+          <li><a href=""class="link">LinkedIn</a></li>
+        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -486,5 +508,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
