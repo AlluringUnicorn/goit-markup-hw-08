@@ -5,6 +5,10 @@
   width: 480px;
   margin: 0 auto;
 
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
   // &__flex {
   //   display: flex;
   //   align-items: baseline;
@@ -14,9 +18,15 @@
     text-align: center;
   }
 
-  // &__box {
-  //   margin-right: 70px;
-  // }
+  &__box {
+    margin-bottom: 60px;
+
+    @media screen and (min-width:768px){
+      margin-left: 76px;
+      margin-right: 165px;
+    }
+    // margin-right: 70px;
+  }
 }
 
 .logo--white {
@@ -29,11 +39,12 @@
   margin-bottom: 8px;
 
   &:last-child{
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
+
 }
 
-.footer-join{
+.footer-join {
   text-align: center;
   margin-bottom: 60px;
 }
@@ -82,5 +93,11 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
+  }
+}
+
+.footer__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }

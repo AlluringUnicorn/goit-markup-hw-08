@@ -2,10 +2,12 @@
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  width:480px;
+  width: 480px;
   margin: 0 auto;
 
-
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
   // padding-top: 94px;
   // padding-bottom: 94px;
@@ -20,10 +22,15 @@
     margin-bottom: 30px;
   }
 
-  // &__list {
-  //   display: flex;
-  //   gap: 30px;
-  // }
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    // gap: 30px;
+  }
 
   &__card {
     background-color: var(--hero-title-color);
@@ -32,8 +39,14 @@
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
 
-    &:last-child{
-      margin-bottom: 0;
+    @media screen and (min-width:768px){
+      margin:15px;
+    }
+
+    &:last-child {
+      @media screen and (max-width:480px){
+          margin-bottom: 0;
+      }
     }
   }
 
