@@ -55,7 +55,6 @@
 
 .mob-menu__item {
   margin-bottom: 32px;
-
 }
 
 .mob-menu__tel {
@@ -100,6 +99,10 @@
 
 .mob-menu__social {
   position: relative;
+
+  @media screen and (max-width: 410px) {
+    flex-wrap: wrap;
+  }
 }
 
 .line::after {
@@ -133,8 +136,21 @@
   position: absolute;
   top: 0;
   left: 275px;
+
+  @media screen and (max-width: 410px) {
+    height: 19px;
+    top: 24px;
+    left: 95px;
+  }
 }
 
-.mob-menu__list{
-  margin-bottom:auto;
+.mob-menu__list {
+  margin-bottom: auto;
+}
+
+.team-img {
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+    height: auto;
+  }
 }
